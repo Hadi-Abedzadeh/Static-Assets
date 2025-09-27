@@ -9,10 +9,10 @@ A PHP package for combining and optimizing CSS/JS files with cache support and f
 ```bash
 composer require hadiabedzadeh/static-assets
 ```
-🚀 Usage
+### 🚀 Usage
 
 ```bash
-use HadiAbedzadeh\StaticAssets\StaticAssets;
+use hadiabedzadeh\StaticAssets\StaticAssets;
 
 echo StaticAssets::combineFiles([
     'assets/src/style1.css',
@@ -25,26 +25,26 @@ echo StaticAssets::combineFiles([
 ], 'js', 'my-segment', 'async');
 ```
 
-⚡ With Laravel
+### ⚡ With Laravel
 
-Example inside a Blade template:
+### Example inside a Blade template:
 ```bash
-{!! HadiAbedzadeh\StaticAssets\StaticAssets::combineFiles([
+{!! hadiabedzadeh\StaticAssets\StaticAssets::combineFiles([
     public_path('css/app.css'),
     public_path('css/theme.css')
 ], 'css', 'laravel', 'defer', public_path(), asset('')) !!}
 ```
-🏛️ With Symfony
+### 🏛️ With Symfony
 
-Example inside a Twig template:
+### Example inside a Twig template:
 ```bash
-{{ HadiAbedzadeh\StaticAssets\StaticAssets.combineFiles([
+{{ hadiabedzadeh\StaticAssets\StaticAssets.combineFiles([
     'assets/css/app.css',
     'assets/css/theme.css'
 ], 'css', 'symfony', 'defer', project_root ~ '/public', asset(''))|raw }}
 ```
 
-⚙️ Options
+### ⚙️ Options
 
 * $files: Array of file paths
 
@@ -57,17 +57,3 @@ Example inside a Twig template:
 * $publicPath: Filesystem path to public folder (defaults to getcwd() . '/public')
 
 * $publicUrl: Base URL for assets (optional)
-
-📤 Publishing to Packagist
-
-Create a GitHub repo: github.com/hadiabedzadeh/static-assets
-
-Push all files and create a release tag (e.g., v1.0.0)
-
-Submit the repo to Packagist
- or enable GitHub auto-sync
- 
-
-📝 License
-
-`MIT License`
