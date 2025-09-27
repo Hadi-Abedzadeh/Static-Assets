@@ -1,0 +1,22 @@
+{
+"name": "hadiabedzadeh/static-assets",
+"description": "Combine and serve combined CSS/JS assets with simple cache-busting",
+"type": "library",
+"license": "MIT",
+"authors": [
+{
+"name": "Hadi Abedzadeh",
+"homepage": "https://github.com/hadiabedzadeh"
+}
+],
+"autoload": {
+"psr-4": {
+"hadiabedzadeh\\StaticAssets\\": "src/"
+}
+},
+"require": {
+"php": ">=7.4"
+},
+"minimum-stability": "stable",
+"prefer-stable": true
+}
